@@ -53,7 +53,12 @@
             this.textBoxTotalAmount = new System.Windows.Forms.TextBox();
             this.textBoxAverage = new System.Windows.Forms.TextBox();
             this.buttonAdminDelete = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.labelFrom = new System.Windows.Forms.Label();
+            this.labelTo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewExpenses)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridViewExpenses
@@ -64,12 +69,12 @@
             this.dataGridViewExpenses.Name = "dataGridViewExpenses";
             this.dataGridViewExpenses.ReadOnly = true;
             this.dataGridViewExpenses.RowTemplate.Height = 24;
-            this.dataGridViewExpenses.Size = new System.Drawing.Size(660, 218);
+            this.dataGridViewExpenses.Size = new System.Drawing.Size(757, 218);
             this.dataGridViewExpenses.TabIndex = 0;
             // 
             // buttonShowAll
             // 
-            this.buttonShowAll.Location = new System.Drawing.Point(51, 266);
+            this.buttonShowAll.Location = new System.Drawing.Point(13, 364);
             this.buttonShowAll.Name = "buttonShowAll";
             this.buttonShowAll.Size = new System.Drawing.Size(74, 35);
             this.buttonShowAll.TabIndex = 1;
@@ -80,7 +85,7 @@
             // buttonUpdate
             // 
             this.buttonUpdate.Enabled = false;
-            this.buttonUpdate.Location = new System.Drawing.Point(598, 397);
+            this.buttonUpdate.Location = new System.Drawing.Point(695, 397);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(75, 25);
             this.buttonUpdate.TabIndex = 2;
@@ -90,7 +95,7 @@
             // 
             // buttonDelete
             // 
-            this.buttonDelete.Location = new System.Drawing.Point(12, 307);
+            this.buttonDelete.Location = new System.Drawing.Point(16, 435);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(75, 23);
             this.buttonDelete.TabIndex = 4;
@@ -100,31 +105,31 @@
             // 
             // textDelete
             // 
-            this.textDelete.Location = new System.Drawing.Point(93, 307);
+            this.textDelete.Location = new System.Drawing.Point(106, 436);
             this.textDelete.Name = "textDelete";
             this.textDelete.Size = new System.Drawing.Size(55, 22);
             this.textDelete.TabIndex = 5;
             // 
             // buttonSearchById
             // 
-            this.buttonSearchById.Location = new System.Drawing.Point(13, 336);
+            this.buttonSearchById.Location = new System.Drawing.Point(16, 405);
             this.buttonSearchById.Name = "buttonSearchById";
-            this.buttonSearchById.Size = new System.Drawing.Size(75, 28);
+            this.buttonSearchById.Size = new System.Drawing.Size(75, 23);
             this.buttonSearchById.TabIndex = 6;
-            this.buttonSearchById.Text = "Get by ID";
+            this.buttonSearchById.Text = "Get";
             this.buttonSearchById.UseVisualStyleBackColor = true;
             this.buttonSearchById.Click += new System.EventHandler(this.buttonSearchById_Click);
             // 
             // textBoxSearchByID
             // 
-            this.textBoxSearchByID.Location = new System.Drawing.Point(94, 336);
+            this.textBoxSearchByID.Location = new System.Drawing.Point(106, 406);
             this.textBoxSearchByID.Name = "textBoxSearchByID";
             this.textBoxSearchByID.Size = new System.Drawing.Size(55, 22);
             this.textBoxSearchByID.TabIndex = 7;
             // 
             // textBoxDescription
             // 
-            this.textBoxDescription.Location = new System.Drawing.Point(418, 400);
+            this.textBoxDescription.Location = new System.Drawing.Point(522, 400);
             this.textBoxDescription.Name = "textBoxDescription";
             this.textBoxDescription.Size = new System.Drawing.Size(152, 22);
             this.textBoxDescription.TabIndex = 8;
@@ -132,7 +137,7 @@
             // 
             // textBoxAmount
             // 
-            this.textBoxAmount.Location = new System.Drawing.Point(418, 430);
+            this.textBoxAmount.Location = new System.Drawing.Point(522, 429);
             this.textBoxAmount.Name = "textBoxAmount";
             this.textBoxAmount.Size = new System.Drawing.Size(152, 22);
             this.textBoxAmount.TabIndex = 9;
@@ -140,7 +145,7 @@
             // 
             // textBoxComment
             // 
-            this.textBoxComment.Location = new System.Drawing.Point(418, 458);
+            this.textBoxComment.Location = new System.Drawing.Point(522, 457);
             this.textBoxComment.Name = "textBoxComment";
             this.textBoxComment.Size = new System.Drawing.Size(152, 22);
             this.textBoxComment.TabIndex = 10;
@@ -149,7 +154,7 @@
             // labelDescription
             // 
             this.labelDescription.AutoSize = true;
-            this.labelDescription.Location = new System.Drawing.Point(281, 405);
+            this.labelDescription.Location = new System.Drawing.Point(359, 405);
             this.labelDescription.Name = "labelDescription";
             this.labelDescription.Size = new System.Drawing.Size(79, 17);
             this.labelDescription.TabIndex = 11;
@@ -158,7 +163,7 @@
             // labelAmount
             // 
             this.labelAmount.AutoSize = true;
-            this.labelAmount.Location = new System.Drawing.Point(281, 435);
+            this.labelAmount.Location = new System.Drawing.Point(359, 434);
             this.labelAmount.Name = "labelAmount";
             this.labelAmount.Size = new System.Drawing.Size(56, 17);
             this.labelAmount.TabIndex = 12;
@@ -167,7 +172,7 @@
             // labelComment
             // 
             this.labelComment.AutoSize = true;
-            this.labelComment.Location = new System.Drawing.Point(281, 463);
+            this.labelComment.Location = new System.Drawing.Point(359, 463);
             this.labelComment.Name = "labelComment";
             this.labelComment.Size = new System.Drawing.Size(67, 17);
             this.labelComment.TabIndex = 13;
@@ -185,9 +190,10 @@
             // 
             // buttonBack
             // 
-            this.buttonBack.Location = new System.Drawing.Point(12, 462);
+            this.buttonBack.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.buttonBack.Location = new System.Drawing.Point(0, 524);
             this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(75, 31);
+            this.buttonBack.Size = new System.Drawing.Size(782, 31);
             this.buttonBack.TabIndex = 15;
             this.buttonBack.Text = "Back";
             this.buttonBack.UseVisualStyleBackColor = true;
@@ -195,7 +201,7 @@
             // 
             // buttonAdd
             // 
-            this.buttonAdd.Location = new System.Drawing.Point(598, 428);
+            this.buttonAdd.Location = new System.Drawing.Point(695, 428);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(75, 23);
             this.buttonAdd.TabIndex = 16;
@@ -205,7 +211,7 @@
             // 
             // buttonClear
             // 
-            this.buttonClear.Location = new System.Drawing.Point(598, 457);
+            this.buttonClear.Location = new System.Drawing.Point(695, 457);
             this.buttonClear.Name = "buttonClear";
             this.buttonClear.Size = new System.Drawing.Size(75, 23);
             this.buttonClear.TabIndex = 17;
@@ -215,24 +221,24 @@
             // 
             // buttonShowAllExpenses
             // 
-            this.buttonShowAllExpenses.Location = new System.Drawing.Point(383, 237);
+            this.buttonShowAllExpenses.Location = new System.Drawing.Point(6, 64);
             this.buttonShowAllExpenses.Name = "buttonShowAllExpenses";
-            this.buttonShowAllExpenses.Size = new System.Drawing.Size(290, 31);
+            this.buttonShowAllExpenses.Size = new System.Drawing.Size(100, 31);
             this.buttonShowAllExpenses.TabIndex = 18;
-            this.buttonShowAllExpenses.Text = "Show me all possible expenses (Admin)";
+            this.buttonShowAllExpenses.Text = "Show All";
             this.buttonShowAllExpenses.UseVisualStyleBackColor = true;
             this.buttonShowAllExpenses.Click += new System.EventHandler(this.buttonShowAllExpenses_Click);
             // 
             // textBoxFrom
             // 
-            this.textBoxFrom.Location = new System.Drawing.Point(13, 237);
+            this.textBoxFrom.Location = new System.Drawing.Point(325, 266);
             this.textBoxFrom.Name = "textBoxFrom";
             this.textBoxFrom.Size = new System.Drawing.Size(78, 22);
             this.textBoxFrom.TabIndex = 19;
             // 
             // textBoxTo
             // 
-            this.textBoxTo.Location = new System.Drawing.Point(97, 237);
+            this.textBoxTo.Location = new System.Drawing.Point(409, 266);
             this.textBoxTo.Name = "textBoxTo";
             this.textBoxTo.Size = new System.Drawing.Size(85, 22);
             this.textBoxTo.TabIndex = 20;
@@ -240,7 +246,7 @@
             // labelTotalAmountPerTime
             // 
             this.labelTotalAmountPerTime.AutoSize = true;
-            this.labelTotalAmountPerTime.Location = new System.Drawing.Point(449, 288);
+            this.labelTotalAmountPerTime.Location = new System.Drawing.Point(564, 288);
             this.labelTotalAmountPerTime.Name = "labelTotalAmountPerTime";
             this.labelTotalAmountPerTime.Size = new System.Drawing.Size(92, 17);
             this.labelTotalAmountPerTime.TabIndex = 21;
@@ -249,7 +255,7 @@
             // labelExpensesPerDay
             // 
             this.labelExpensesPerDay.AutoSize = true;
-            this.labelExpensesPerDay.Location = new System.Drawing.Point(449, 317);
+            this.labelExpensesPerDay.Location = new System.Drawing.Point(595, 317);
             this.labelExpensesPerDay.Name = "labelExpensesPerDay";
             this.labelExpensesPerDay.Size = new System.Drawing.Size(61, 17);
             this.labelExpensesPerDay.TabIndex = 22;
@@ -257,7 +263,7 @@
             // 
             // textBoxTotalAmount
             // 
-            this.textBoxTotalAmount.Location = new System.Drawing.Point(573, 283);
+            this.textBoxTotalAmount.Location = new System.Drawing.Point(670, 283);
             this.textBoxTotalAmount.Name = "textBoxTotalAmount";
             this.textBoxTotalAmount.ReadOnly = true;
             this.textBoxTotalAmount.Size = new System.Drawing.Size(100, 22);
@@ -265,7 +271,7 @@
             // 
             // textBoxAverage
             // 
-            this.textBoxAverage.Location = new System.Drawing.Point(573, 312);
+            this.textBoxAverage.Location = new System.Drawing.Point(670, 317);
             this.textBoxAverage.Name = "textBoxAverage";
             this.textBoxAverage.ReadOnly = true;
             this.textBoxAverage.Size = new System.Drawing.Size(100, 22);
@@ -273,27 +279,67 @@
             // 
             // buttonAdminDelete
             // 
-            this.buttonAdminDelete.Location = new System.Drawing.Point(154, 306);
+            this.buttonAdminDelete.Location = new System.Drawing.Point(112, 64);
             this.buttonAdminDelete.Name = "buttonAdminDelete";
-            this.buttonAdminDelete.Size = new System.Drawing.Size(154, 28);
+            this.buttonAdminDelete.Size = new System.Drawing.Size(97, 31);
             this.buttonAdminDelete.TabIndex = 25;
-            this.buttonAdminDelete.Text = "Delete by Admin";
+            this.buttonAdminDelete.Text = "Delete";
             this.buttonAdminDelete.UseVisualStyleBackColor = true;
             this.buttonAdminDelete.Click += new System.EventHandler(this.buttonAdminDelete_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.buttonAdminDelete);
+            this.panel1.Controls.Add(this.buttonShowAllExpenses);
+            this.panel1.Location = new System.Drawing.Point(16, 239);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(215, 100);
+            this.panel1.TabIndex = 26;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(54, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(112, 17);
+            this.label2.TabIndex = 26;
+            this.label2.Text = "Admin Functions";
+            // 
+            // labelFrom
+            // 
+            this.labelFrom.AutoSize = true;
+            this.labelFrom.Location = new System.Drawing.Point(338, 243);
+            this.labelFrom.Name = "labelFrom";
+            this.labelFrom.Size = new System.Drawing.Size(40, 17);
+            this.labelFrom.TabIndex = 27;
+            this.labelFrom.Text = "From";
+            // 
+            // labelTo
+            // 
+            this.labelTo.AutoSize = true;
+            this.labelTo.Location = new System.Drawing.Point(429, 243);
+            this.labelTo.Name = "labelTo";
+            this.labelTo.Size = new System.Drawing.Size(25, 17);
+            this.labelTo.TabIndex = 28;
+            this.labelTo.Text = "To";
             // 
             // ExpensesCRUDForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(771, 505);
-            this.Controls.Add(this.buttonAdminDelete);
+            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.ClientSize = new System.Drawing.Size(782, 555);
+            this.ControlBox = false;
+            this.Controls.Add(this.labelTo);
+            this.Controls.Add(this.labelFrom);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.textBoxAverage);
             this.Controls.Add(this.textBoxTotalAmount);
             this.Controls.Add(this.labelExpensesPerDay);
             this.Controls.Add(this.labelTotalAmountPerTime);
             this.Controls.Add(this.textBoxTo);
             this.Controls.Add(this.textBoxFrom);
-            this.Controls.Add(this.buttonShowAllExpenses);
             this.Controls.Add(this.buttonClear);
             this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.buttonBack);
@@ -314,6 +360,8 @@
             this.Name = "ExpensesCRUDForm";
             this.Text = "Expenses";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewExpenses)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -346,5 +394,9 @@
         private System.Windows.Forms.TextBox textBoxTotalAmount;
         private System.Windows.Forms.TextBox textBoxAverage;
         private System.Windows.Forms.Button buttonAdminDelete;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelFrom;
+        private System.Windows.Forms.Label labelTo;
     }
 }

@@ -264,5 +264,10 @@ namespace ExpensesTrackerClient.forms
             }
         }
 
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
     }
 }

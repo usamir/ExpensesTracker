@@ -56,7 +56,7 @@
             // 
             // buttonChangePass
             // 
-            this.buttonChangePass.Location = new System.Drawing.Point(12, 353);
+            this.buttonChangePass.Location = new System.Drawing.Point(13, 148);
             this.buttonChangePass.Name = "buttonChangePass";
             this.buttonChangePass.Size = new System.Drawing.Size(166, 34);
             this.buttonChangePass.TabIndex = 4;
@@ -66,7 +66,7 @@
             // 
             // buttonBackToLogin
             // 
-            this.buttonBackToLogin.Location = new System.Drawing.Point(398, 353);
+            this.buttonBackToLogin.Location = new System.Drawing.Point(695, 509);
             this.buttonBackToLogin.Name = "buttonBackToLogin";
             this.buttonBackToLogin.Size = new System.Drawing.Size(75, 34);
             this.buttonBackToLogin.TabIndex = 5;
@@ -78,13 +78,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(485, 399);
+            this.AutoSize = true;
+            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.ClientSize = new System.Drawing.Size(782, 555);
             this.Controls.Add(this.buttonBackToLogin);
             this.Controls.Add(this.buttonChangePass);
             this.Controls.Add(this.buttonManageUsers);
             this.Controls.Add(this.buttonShow);
             this.Name = "ExpensesForm";
-            this.Text = "Main Form";
+            this.ShowIcon = false;
+            this.Text = "Expenses Tracker";
             this.ResumeLayout(false);
 
         }

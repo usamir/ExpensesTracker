@@ -39,9 +39,9 @@
             // 
             // buttonLogin
             // 
-            this.buttonLogin.Location = new System.Drawing.Point(13, 168);
+            this.buttonLogin.Location = new System.Drawing.Point(258, 297);
             this.buttonLogin.Name = "buttonLogin";
-            this.buttonLogin.Size = new System.Drawing.Size(75, 27);
+            this.buttonLogin.Size = new System.Drawing.Size(208, 27);
             this.buttonLogin.TabIndex = 0;
             this.buttonLogin.Text = "Login";
             this.buttonLogin.UseVisualStyleBackColor = true;
@@ -49,7 +49,7 @@
             // 
             // buttonRegister
             // 
-            this.buttonRegister.Location = new System.Drawing.Point(13, 201);
+            this.buttonRegister.Location = new System.Drawing.Point(695, 12);
             this.buttonRegister.Name = "buttonRegister";
             this.buttonRegister.Size = new System.Drawing.Size(75, 27);
             this.buttonRegister.TabIndex = 1;
@@ -60,7 +60,7 @@
             // labelUsername
             // 
             this.labelUsername.AutoSize = true;
-            this.labelUsername.Location = new System.Drawing.Point(13, 13);
+            this.labelUsername.Location = new System.Drawing.Point(123, 101);
             this.labelUsername.Name = "labelUsername";
             this.labelUsername.Size = new System.Drawing.Size(73, 17);
             this.labelUsername.TabIndex = 2;
@@ -68,7 +68,7 @@
             // 
             // textBoxUsername
             // 
-            this.textBoxUsername.Location = new System.Drawing.Point(16, 34);
+            this.textBoxUsername.Location = new System.Drawing.Point(258, 96);
             this.textBoxUsername.Name = "textBoxUsername";
             this.textBoxUsername.Size = new System.Drawing.Size(205, 22);
             this.textBoxUsername.TabIndex = 3;
@@ -76,7 +76,7 @@
             // labelPassword
             // 
             this.labelPassword.AutoSize = true;
-            this.labelPassword.Location = new System.Drawing.Point(16, 75);
+            this.labelPassword.Location = new System.Drawing.Point(127, 144);
             this.labelPassword.Name = "labelPassword";
             this.labelPassword.Size = new System.Drawing.Size(69, 17);
             this.labelPassword.TabIndex = 4;
@@ -84,7 +84,7 @@
             // 
             // textBoxPassword
             // 
-            this.textBoxPassword.Location = new System.Drawing.Point(16, 96);
+            this.textBoxPassword.Location = new System.Drawing.Point(258, 139);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(205, 22);
             this.textBoxPassword.TabIndex = 5;
@@ -92,19 +92,23 @@
             // 
             // buttonExit
             // 
-            this.buttonExit.Location = new System.Drawing.Point(173, 214);
+            this.buttonExit.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonExit.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.buttonExit.Location = new System.Drawing.Point(0, 528);
             this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(75, 27);
+            this.buttonExit.Size = new System.Drawing.Size(782, 27);
             this.buttonExit.TabIndex = 6;
             this.buttonExit.Text = "Exit";
-            this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.UseVisualStyleBackColor = false;
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(260, 253);
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ClientSize = new System.Drawing.Size(782, 555);
+            this.ControlBox = false;
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.labelPassword);
@@ -113,6 +117,8 @@
             this.Controls.Add(this.buttonRegister);
             this.Controls.Add(this.buttonLogin);
             this.Name = "LoginForm";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.Text = "LoginForm";
             this.ResumeLayout(false);
             this.PerformLayout();

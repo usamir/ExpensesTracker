@@ -144,9 +144,10 @@
             // 
             // buttonRegister
             // 
-            this.buttonRegister.Location = new System.Drawing.Point(207, 313);
+            this.buttonRegister.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.buttonRegister.Location = new System.Drawing.Point(0, 525);
             this.buttonRegister.Name = "buttonRegister";
-            this.buttonRegister.Size = new System.Drawing.Size(75, 30);
+            this.buttonRegister.Size = new System.Drawing.Size(782, 30);
             this.buttonRegister.TabIndex = 12;
             this.buttonRegister.Text = "Register";
             this.buttonRegister.UseVisualStyleBackColor = true;
@@ -154,7 +155,7 @@
             // 
             // buttonCancel
             // 
-            this.buttonCancel.Location = new System.Drawing.Point(13, 312);
+            this.buttonCancel.Location = new System.Drawing.Point(695, 265);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(75, 31);
             this.buttonCancel.TabIndex = 13;
@@ -166,7 +167,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(310, 348);
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ClientSize = new System.Drawing.Size(782, 555);
+            this.ControlBox = false;
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonRegister);
             this.Controls.Add(this.textBoxConfirmPass);
@@ -182,6 +185,8 @@
             this.Controls.Add(this.textBoxFirstName);
             this.Controls.Add(this.labelFirstName);
             this.Name = "RegisterForm";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.Text = "RegisterForm";
             this.ResumeLayout(false);
             this.PerformLayout();
